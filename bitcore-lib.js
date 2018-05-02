@@ -12278,7 +12278,7 @@ URI.prototype.toString = function() {
   _.extend(query, this.extras);
 
   return URL.format({
-    protocol: Networks.get(this.network ,'name').prefix + ':',
+    protocol: 'bitcoincash:',
     host: this.address.toString(true),
     query: query
   });
